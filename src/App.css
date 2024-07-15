@@ -1,16 +1,33 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p{
+  color:#adaca6;
+font-size:0.7rem ;
 }
 
 header{
+
   max-width: 900px;
   margin: 0 auto;
+
+  z-index: 2;
+
+}
+
+i.fa-bars,i.fa-xmark{
+  display: none;
 }
 div.navContainer{
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+ 
+ 
 }
 div.navContainer li{
   list-style: none;
@@ -54,6 +71,7 @@ div.bgimage{
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
   
 }
 div.left-content{
@@ -104,6 +122,7 @@ a.introbtn{
   margin-left: 10px;
 }
 div.bgimage-btns{
+  margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 7%;
@@ -119,7 +138,7 @@ div.watchIntrobtn button{
 }
 /* choose Us styling */
 div.chooseUs{
-  height: 600px;
+  
   background-color: #fff;
 
   
@@ -128,11 +147,13 @@ div.chooseUs{
 div.chooseUs-container{
 
   display: flex;
+  justify-content: space-evenly;
   max-width: 900px;
   margin: 0 auto;
-  justify-content: space-evenly;
+  gap:5px;
   position: relative;
-  top:-60px
+  top:-60px;
+
 
 
   
@@ -147,9 +168,9 @@ div.strategy{
   background-color: #3D3568;
   padding: 20px;
   border-radius: 10px;
-  width: 24%;
   transition: all;
   transition-duration: 0.5s;
+  flex:1 1 20%;
  
 
 
@@ -176,63 +197,130 @@ div.strategy:hover{
   color: #3D3568;
 }
 div.experience{
+
   max-width: 900px;
-  margin: 70px auto;
+  margin: 50px auto;
   display: flex;
  
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
 
 }
-div.experience-left{
-position:relative;
-border-radius: 50%;
-width: 280px;
-height: 280px;
-background-color:#FAC39C ;
-background-size: cover;
 
-
-}
 div.experience-left img{
-  position: absolute;
-  width: 220px;
+  object-fit: contain;
+ 
+  width: 22vmin;
   top: -70px;
-  left: 30px;
+  left: 25px;
 }
 div.experience-right{
  
   width: 50%;
+}
+div.experience-right h5{
+  margin-top: 5px;
+
+}
+.experiencehead{
+  font-weight: bold;
+  margin-top: 5px;
 }
 div.left-container{
   
   width: 45%;
 }
 .experincetab{
+  
 color:#adaca6;
 font-size:0.7rem ;
 
 }
 
+div.above-footer div.container{
+ 
+  text-align: center;
+  background-color: #3D3568;
+  padding: 40px;
+
+}
+div.above-footer div.container h3{
+  color: #fff;
+  margin-top: 8px;
+}
+div.above-footer div.container div.services-container{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+
+
+}
+div.above-footer div.container div.services-container div.service{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+div.above2-footer div.container{
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+
+}
+div.above2-footer div.container h3{
+  color: #000;
+  margin-top: 8px;
+}
+div.above2-footer div.container div.staff-container{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 20px;
+
+
+}
+div.above2-footer div.container div.staff-container div.staff{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+
 /* media queries */
 
-@media (max-width:800px){
+@media (max-width:750px){
 div.chooseUs-container{
- flex-direction: column;
- gap: 10px;
- align-items: center;
- top: 10px;
-}
-
-div.strategy{
-  width: 50%;
-  
- 
-}
-div.experience{
   flex-direction: column;
   align-items: center;
 
+top: 10px;
+
+}
+div.strategy{
+  width: 50%;
+}
+
+
+div.chooseUs{
+  height: 900px;
+}
+
+
+div.experience{
+
+  display: block;
+  
+  
+}
+div.left-container{
+ margin: 0 auto;
+}
+div.experience-right{
+  margin: 0 auto;
 }
 div.bgimage{
 flex-direction: column;
@@ -258,4 +346,59 @@ div.bgimage-btns{
 main{
   height: 450px;
 }
+i.fa-bars{
+  display: inline-block;
+ 
+
+}
+ul{
+  position: fixed;
+  right: -240px;
+  top: -15px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  background-color: #ff4400;
+
+ 
+}
+ul.openmenu{
+  right: 0;
+}
+ul.closemenu{
+  right: -240px;
+}
+div.navContainer li{
+  display: block;
+  padding: 10px;
+ 
+  
+}
+div.navContainer li a{
+  color: #fff;
+
+}
+div.contact-us{
+  display: none;
+
+}
+div.logo-links{
+
+ 
+  
+  width: 100%;
+  justify-content: space-between;
+}
+i.fa-xmark{
+  color:#3D3568;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  
+  
+  
+}
+
+
 }
