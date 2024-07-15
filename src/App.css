@@ -133,6 +133,9 @@ div.watchIntrobtn button{
   background-color:#ff4400;
   
 }
+i.fa-solid{
+  margin-bottom: 10px;
+}
 .fa-play{
   margin-right: 5px;
 }
@@ -141,13 +144,16 @@ div.chooseUs{
   
   background-color: #fff;
 
+
   
   
 }
 div.chooseUs-container{
-
-  display: flex;
-  justify-content: space-evenly;
+  
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
   max-width: 900px;
   margin: 0 auto;
   gap:5px;
@@ -197,23 +203,23 @@ div.strategy:hover{
   color: #3D3568;
 }
 div.experience{
-
-  max-width: 900px;
-  margin: 50px auto;
-  display: flex;
  
+  max-width: 900px;
+  margin: 10px auto 50px auto;
+  display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
 
 }
+/* div.experience-left{
+  width: 45%;
+} */
 
 div.experience-left img{
   object-fit: contain;
- 
   width: 22vmin;
-  top: -70px;
-  left: 25px;
+ 
 }
 div.experience-right{
  
@@ -237,6 +243,7 @@ color:#adaca6;
 font-size:0.7rem ;
 
 }
+
 
 div.above-footer div.container{
  
@@ -288,16 +295,113 @@ div.above2-footer div.container div.staff-container div.staff{
   border-radius: 10px;
   
 }
+div.above-footer,div.above2-footer{
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* Footer design */
+footer{
+  max-width: 900px;
+  margin: 0 auto;
+  background-color:#0E0C1D;
+  padding: 0 30px 0 50px;
+}
+footer div.container{
+  padding: 20px;
+ 
+}
+div.row{
+  display: flex;
+  align-items: center;
+}
+.contact-left{
+  flex-basis: 35%;
 
+}
+.contact-right{
+  flex-basis: 60%;
+  
+}
+.contact-left p{
+  margin-top: 30px;
+}
+.contact-left p i{
+  color: #ff4400;
+  margin-right: 15px;
+  font-size: 25px;
+
+}
+.social-icons{
+  margin-top: 30px;
+
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color: #ff4400;
+  transform: translateY(-5px);
+}
+.btn.btn2{
+  border: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff4400;}
+
+  .contact-right form{
+    width: 100%;
+  
+  }
+  form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+    border-radius: 6px;
+  
+  }
+  form .btn2{
+    padding: 10px 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  
+  
+  }
+  div.contact-left h1.sub-title{
+    color: #fff;
+  }
+  
+ 
 
 /* media queries */
 
 @media (max-width:750px){
 div.chooseUs-container{
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column;
+  align-items: center; */
+  
+  top:60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
 
-top: 10px;
+ 
+  
+  
+
+
 
 }
 div.strategy{
@@ -305,23 +409,31 @@ div.strategy{
 }
 
 
-div.chooseUs{
-  height: 900px;
-}
 
 
 div.experience{
+ 
 
   display: block;
-  
-  
-}
-div.left-container{
- margin: 0 auto;
+
+ 
 }
 div.experience-right{
   margin: 0 auto;
+  
 }
+div.experience-right h5{
+  font-size: 0.75rem;
+}
+.experiencehead{
+  font-size: 0.8rem;
+}
+div.experience-left{
+  text-align: center;
+}
+
+
+
 div.bgimage{
 flex-direction: column;
 align-items: center;
@@ -399,6 +511,59 @@ i.fa-xmark{
   
   
 }
+.contact-left,.contact-right{
+  flex-basis: 100%;
+ 
 
+}
+div.row{
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+div.above-footer div.container div.services-container{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+
+
+}
+
+
+
+
+
+}
+
+@media (max-width:560px){
+  div.above2-footer div.container div.staff-container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  
+  
+  }
+  div.chooseUs-container{
+    /* flex-direction: column;
+    align-items: center; */
+    
+    top: -30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+  
+   
+    
+    
+  
+  
+  
+  }
 
 }

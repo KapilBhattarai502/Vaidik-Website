@@ -7,7 +7,7 @@ const Body = () => {
         <div className="bgimage">
           <div className="left-content">
             <div className="slogan">
-              <span>WELCOME TO SOCIALZY</span>
+              <span>WELCOME TO VAIDIK</span>
             </div>
             <h3>
               Welcome to Vaidik
@@ -80,7 +80,7 @@ const Body = () => {
           </div>
           <div class="experience-right">
             <div className="slogan">
-              <span>WELCOME TO SOCIALZY</span>
+              <span>WELCOME TO VAIDIK</span>
             </div>
             <h4 className="experiencehead">
               15 Years Of Experiences In Social Media Marketing
@@ -112,7 +112,7 @@ const Body = () => {
       <div className="above-footer">
         <div className="container">
           <div className="slogan abovefooterslogan">
-            <span>WELCOME TO SOCIALZY</span>
+            <span>WELCOME TO VAIDIK</span>
           </div>
           <h3>We Provide The Best Service For You</h3>
           <p>
