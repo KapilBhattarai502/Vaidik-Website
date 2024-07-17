@@ -21,9 +21,9 @@ const Header = () => {
             <ul className={menuOpen?'openmenu':'closemenu'}>
              
               <li><a className='active' href='#'>Home</a></li>
-              <li><a href='#'>About</a></li>
-              <li><a href='#'>Services</a></li>
-              <li><a href='#'>Contact</a></li>
+              <li><a href='#choose'>About</a></li>
+              <li><a href='#service'>Services</a></li>
+              <li><a href='#contact'>Contact</a></li>
               <li><i className="fa-solid fa-xmark" onClick={closeMenu}></i></li>
              
             </ul>

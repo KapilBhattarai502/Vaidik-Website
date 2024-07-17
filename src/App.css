@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 p{
   color:#adaca6;
 font-size:0.7rem ;
@@ -13,7 +16,7 @@ header{
   max-width: 900px;
   margin: 0 auto;
 
-  z-index: 2;
+
 
 }
 
@@ -115,12 +118,12 @@ div.left-content button i{
  
 }
 
-a.introbtn{
+/* a.introbtn{
   text-decoration: none;
   font-size: 0.85rem;
   color: #000;
   margin-left: 10px;
-}
+} */
 div.bgimage-btns{
   margin-top: 20px;
   display: flex;
@@ -133,7 +136,7 @@ div.watchIntrobtn button{
   background-color:#ff4400;
   
 }
-i.fa-solid{
+i.choosebtn{
   margin-bottom: 10px;
 }
 .fa-play{
@@ -245,6 +248,7 @@ font-size:0.7rem ;
 }
 
 
+
 div.above-footer div.container{
  
   text-align: center;
@@ -252,6 +256,16 @@ div.above-footer div.container{
   padding: 40px;
 
 }
+div.photoBox{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #ff4400;
+  display: inline-block;
+  background-image: url("/images/myImage-removebg-preview.png");
+  background-size: cover;
+}
+
 div.above-footer div.container h3{
   color: #fff;
   margin-top: 8px;
@@ -266,9 +280,13 @@ div.above-footer div.container div.services-container{
 
 }
 div.above-footer div.container div.services-container div.service{
-  background-color: #fff;
+  background-color: #3D3568;
   padding: 20px;
   border-radius: 10px;
+}
+div.above-footer div.container div.services-container div.service h4{
+  color: #fff;
+  margin-top: 5px;
 }
 div.above2-footer div.container{
   text-align: center;
@@ -467,10 +485,12 @@ ul{
   position: fixed;
   right: -240px;
   top: -15px;
-  width: 200px;
+  width: 180px;
   height: 100vh;
   padding-top: 50px;
   background-color: #ff4400;
+  z-index: 2;
+  text-align: center;
 
  
 }
@@ -562,6 +582,15 @@ div.above-footer div.container div.services-container{
     
     
   
+  
+  
+  }
+  div.above-footer div.container div.services-container{
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+   
   
   
   }
