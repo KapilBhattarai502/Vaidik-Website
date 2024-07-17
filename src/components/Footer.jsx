@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Footer = () => {
+  const [Name,setName]=useState('');
+  const [Email,setEmail]=useState('');
+  const [Message,setMessage]=useState('');
+  const handleSubmit=()=>{
+    event.preventDefault();
+   fetch('http://localhost:2010/api/contact',{
+    method:'POST',
+    body:JSON.stringify({Name,Email,Message}),
+    headers:{
+      'Content-Type':"application/json"
+    }
+   });
+
+  }
   return (
     <>
   <footer>
@@ -20,10 +34,16 @@ const Footer = () => {
               
             </div>
             <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required/>
-                <input type="email" name="Email" placeholder="Your Email" required/>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
+                <input type="text" name="Name" placeholder="Your Name" onChange={(event)=>{
+                  setName(event.target.value);
+                }}  required/>
+                <input type="email" name="Email" placeholder="Your Email" required onChange={(event)=>{
+                  setEmail(event.target.value);
+                }}/>
+                <textarea name="Message" rows="6" placeholder="Your Message" onChange={(event)=>{
+                  setMessage(event.target.value);
+                }}></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
                 </form>
               
