@@ -189,7 +189,7 @@ const Body = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Delectus corrupti consectetur voluptas suscipit numquam
                 voluptates reprehenderit optio hic exercitationem nam qui nemo,
-                eius culpa vel.
+                eius culpa vela.
               </p>
             </div>
           </div>
